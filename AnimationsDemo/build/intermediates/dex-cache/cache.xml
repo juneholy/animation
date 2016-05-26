@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\work\github\AnimationsDemo\app\libs\android-support-v13.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="0a0cf96dabecd7b65a3638a229e7bdb42e6b0a77">
+        <dex dex="D:\work\github\AnimationsDemo\app\build\intermediates\pre-dexed\debug\android-support-v13_b9daa409c35b10d16b0c8026e3fc6792b0417387.jar" />
+    </item>
+
+</items>

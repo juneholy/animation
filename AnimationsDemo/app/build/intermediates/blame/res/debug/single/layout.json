@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "D:\\work\\github\\AnimationsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_crossfade.xml",
+        "source": "D:\\work\\github\\AnimationsDemo\\app\\src\\main\\res\\layout\\activity_crossfade.xml"
+    },
+    {
+        "merged": "D:\\work\\github\\AnimationsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_layout_changes.xml",
+        "source": "D:\\work\\github\\AnimationsDemo\\app\\src\\main\\res\\layout\\activity_layout_changes.xml"
+    },
+    {
+        "merged": "D:\\work\\github\\AnimationsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\work\\github\\AnimationsDemo\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\work\\github\\AnimationsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_card_flip.xml",
+        "source": "D:\\work\\github\\AnimationsDemo\\app\\src\\main\\res\\layout\\activity_card_flip.xml"
+    },
+    {
+        "merged": "D:\\work\\github\\AnimationsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\excerpt_content.xml",
+        "source": "D:\\work\\github\\AnimationsDemo\\app\\src\\main\\res\\layout\\excerpt_content.xml"
+    },
+    {
+        "merged": "D:\\work\\github\\AnimationsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_screen_slide.xml",
+        "source": "D:\\work\\github\\AnimationsDemo\\app\\src\\main\\res\\layout\\activity_screen_slide.xml"
+    },
+    {
+        "merged": "D:\\work\\github\\AnimationsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_card_front.xml",
+        "source": "D:\\work\\github\\AnimationsDemo\\app\\src\\main\\res\\layout\\fragment_card_front.xml"
+    },
+    {
+        "merged": "D:\\work\\github\\AnimationsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_card_back.xml",
+        "source": "D:\\work\\github\\AnimationsDemo\\app\\src\\main\\res\\layout\\fragment_card_back.xml"
+    },
+    {
+        "merged": "D:\\work\\github\\AnimationsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_screen_slide_page.xml",
+        "source": "D:\\work\\github\\AnimationsDemo\\app\\src\\main\\res\\layout\\fragment_screen_slide_page.xml"
+    },
+    {
+        "merged": "D:\\work\\github\\AnimationsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_example.xml",
+        "source": "D:\\work\\github\\AnimationsDemo\\app\\src\\main\\res\\layout\\list_item_example.xml"
+    },
+    {
+        "merged": "D:\\work\\github\\AnimationsDemo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_zoom.xml",
+        "source": "D:\\work\\github\\AnimationsDemo\\app\\src\\main\\res\\layout\\activity_zoom.xml"
+    }
+]

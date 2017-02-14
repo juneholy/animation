@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/atom_train_ll_international_s2s"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/atom_train_gray_bg_color"
+            android:orientation="vertical">
+
+        <!-- 首页通知 -->
+        <LinearLayout
+                android:id="@+id/atom_train_fl_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                tools:background="#ffc018cf"
+                tools:layout_height="20dp"
+                tools:visibility="visible"/>
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <!-- 选择城市 -->
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/atom_train_white_color"
+                        android:paddingLeft="@dimen/atom_train_padding"
+                        android:paddingRight="@dimen/atom_train_padding">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp">
+
+                        <Button
+                                android:id="@+id/atom_train_btn_swap_s2s"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/atom_train_exchange_horizontal"/>
+
+                        <TextView
+                                android:id="@+id/atom_train_tv_dep_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="北京"
+                                android:textColor="@color/atom_train_black2blue_selector"
+                                android:textSize="22dp"/>
+
+                        <TextView
+                                android:id="@+id/atom_train_tv_arr_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:textColor="@color/atom_train_black2blue_selector"
+                                android:textSize="22dp"
+                                tools:text="上海"/>
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                            <View
+                                    android:id="@+id/atom_train_view_dep_click"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"/>
+
+                            <View
+                                    android:id="@+id/atom_train_view_swap_click"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"/>
+
+                            <View
+                                    android:id="@+id/atom_train_view_arr_click"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <!--底线-->
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/atom_train_white_color"
+                        android:orientation="horizontal">
+                    <View
+                            style="@style/atom_train_line"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1"/>
+                    <View
+                            style="@style/atom_train_line"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+
+                <!--欧铁点对点扩展栏-->
+                <RelativeLayout
+                        android:id="@+id/atom_train_rl_eurail_extend"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:background="@color/atom_train_white_color"
+                        android:paddingLeft="@dimen/atom_train_padding"
+                        android:paddingRight="@dimen/atom_train_padding"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                    <!--日期栏-->
+                    <RelativeLayout
+                            android:id="@+id/atom_train_rl_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true">
+
+                        <TextView
+                                android:id="@+id/atom_train_tv_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/atom_train_black2blue_selector"
+                                android:textSize="22dp"
+                                tools:text="12月14日"/>
+
+                        <TextView
+                                android:id="@+id/atom_train_tv_week"
+                                style="@style/atom_train_text_16_gray_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/atom_train_padding"
+                                android:layout_toRightOf="@id/atom_train_tv_date"
+                                android:paddingTop="3dp"
+                                tools:text="周五"/>
+
+                        <TextView
+                                android:id="@+id/atom_train_tv_time"
+                                style="@style/atom_train_text_16_gray_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_toRightOf="@id/atom_train_tv_week"
+                                android:paddingTop="3dp"
+                                tools:text="10:00"/>
+                    </RelativeLayout>
+
+                    <!--乘客栏-->
+                    <LinearLayout
+                            android:id="@+id/atom_train_ll_person"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+                        <com.mqunar.atom.train.common.ui.view.IconFontView
+                                android:id="@+id/atom_train_tv_people_icon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/atom_train_icon_person"
+                                android:textColor="@color/atom_train_gray_black_color"
+                                android:textSize="22dp"/>
+
+                        <TextView
+                                android:id="@+id/atom_train_tv_people_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textColor="@color/atom_train_black2blue_selector"
+                                android:textSize="20dp"/>
+                    </LinearLayout>
+
+                    <View
+                            style="@style/atom_train_line"
+                            android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+
+
+                <!--通知栏-->
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/atom_train_white_color"
+                        android:orientation="vertical"
+                        android:paddingBottom="20dp">
+
+                    <LinearLayout
+                            android:id="@+id/atom_train_international_s2s_ll_notice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            tools:visibility="gone">
+
+                        <com.mqunar.atom.train.common.ui.view.IconFontView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="1dp"
+                                android:gravity="center"
+                                android:text="@string/atom_train_icon_home_notice"
+                                android:textColor="@color/atom_train_text_shallow_black_color"
+                                android:textSize="16dp"/>
+                        <TextView
+                                android:id="@+id/atom_train_international_s2s_tv_notice"
+                                style="@style/atom_train_text_13_gray"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="14dp"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:singleLine="true"
+                                android:text="今天预定 8月10日 —— 11月20日使用有效"/>
+                    </LinearLayout>
+
+                    <!-- 搜索按钮 -->
+                    <Button
+                            android:id="@+id/atom_train_btn_search_s2s"
+                            style="@style/atom_train_text_18_white"
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="@dimen/atom_train_padding"
+                            android:layout_marginRight="@dimen/atom_train_padding"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/atom_train_shape_orange_round_rect_selector"
+                            android:text="@string/atom_train_pat_search"/>
+
+                </LinearLayout>
+
+                <!--国际火车通票-->
+                <RelativeLayout
+                        android:id="@+id/atom_train_rl_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/atom_train_white_color"
+                        android:visibility="gone"
+                        tools:visibility="visible">
+
+                    <TextView
+                            style="@style/atom_train_text_16_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:text="国际火车通票"/>
+
+                    <com.mqunar.atom.train.common.ui.view.IconFontView
+                            android:id="@+id/atom_train_ifv_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="11dp"
+                            android:gravity="center_vertical"
+                            android:paddingTop="2dp"
+                            android:text="@string/atom_train_icon_right_arrow"
+                            android:textColor="@color/atom_train_text_gray_color"
+                            android:textSize="22dp"/>
+
+                    <TextView
+                            android:id="@+id/atom_train_tv_more"
+                            style="@style/atom_train_text_13_gray_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/atom_train_ifv_arrow"
+                            android:text="更多"/>
+                </RelativeLayout>
+
+                <!--九宫格国家-->
+                <com.mqunar.atom.train.common.ui.linearlayout.GridLinearLayout
+                        android:id="@+id/atom_train_gll_countries_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/atom_train_white_color"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+            android:id="@+id/atom_train_international_fl_non_work"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/atom_train_gray_bg_color"
+            tools:visibility="gone">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/atom_train_bg_international_non_work"/>
+    </FrameLayout>
+</FrameLayout>
